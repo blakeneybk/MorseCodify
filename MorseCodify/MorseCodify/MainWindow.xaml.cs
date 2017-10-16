@@ -27,6 +27,7 @@ namespace MorseCodify
             InitializeComponent();
         }
 
+        //Handler for the encode button to convert the text in english textbox to morse code text in textbox morse
         private void Button_Click_Encode(object sender, RoutedEventArgs e)
         {
             MorseCoder mc = new MorseCoder();

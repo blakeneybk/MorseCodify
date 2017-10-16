@@ -8,6 +8,7 @@ namespace MorseCodify.Model
 {
     public class Codex
     {
+        //This program uses a dictionary because of the constant lookup speed.
         public static Dictionary<char, string> Morse { get; } = new Dictionary<char, string>()
         {
             {'A' , ".-"},{'a' , ".-"},
