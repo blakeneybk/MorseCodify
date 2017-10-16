@@ -1,0 +1,18 @@
+﻿<Window x:Class="MorseCodify.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Morse Codify" Height="500" Width="900">
+    <Grid>
+        <TextBox x:Name="textbox_English" HorizontalAlignment="Left" Height="356" Margin="18,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="412" Cursor="IBeam" SpellCheck.IsEnabled="True"/>
+        <Label Content="English" HorizontalAlignment="Left" Margin="193,33,0,0" VerticalAlignment="Top" Width="112"/>
+        <TextBox x:Name="textbox_Morse" HorizontalAlignment="Left" Height="356" Margin="435,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="441" Cursor="IBeam" IsEnabled="False"/>
+        <Label Content="Morse Code" HorizontalAlignment="Left" Margin="626,38,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label Content="*Enter the text you want to convert into Morse code into the English text box." HorizontalAlignment="Left" Margin="18,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.319,0.399" Width="858"/>
+        <Button x:Name="encode_Button" Content="Encode" HorizontalAlignment="Left" Margin="177,425,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Encode"/>
+        <Button Content="Decode" HorizontalAlignment="Left" Margin="626,425,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
